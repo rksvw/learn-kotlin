@@ -1,10 +1,21 @@
+
+
+import iSayHello// Single expression function
+fun getGreeting() = "Hello Kotlin"
+
+fun sayHello(){
+    println(getGreeting())
+}
+
+
+fun iSayHello(name: String) {
+    println("Hello $name")
+}
+
+
 fun main() {
-    val name: String = "Roman"
-    var num: Int = 5
-    println(num)
+    sayHello()
+    iSayHello("Ritik")
+    iSayHello("World")
 
-    num = 8
-    println(num)
-
-    println(name)
 }
